@@ -67,3 +67,28 @@ uncookedFood.forEach((foodItem) => {
   grill(foodItem)
 })
 console.log(cookedFood)
+
+
+
+
+
+
+//Overly excited practice challenge-- create an array of words, then create a function addExcitement that console logs rows of words until it reaches the end of the array
+
+
+let sentence = ["Only", "ten", "minutes", "left", "in", "class", "today", "...", "but", "I", "kinda", "like", "it", "here"];
+
+
+
+function addExcitement (theWordArray) {
+
+    
+    let buildMeUp = ""
+
+    theWordArray.forEach((word) => {
+      buildMeUp += `${word} `
+      console.log(buildMeUp)
+    })
+
+}
+addExcitement(sentence)
