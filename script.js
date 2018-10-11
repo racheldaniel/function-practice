@@ -92,3 +92,19 @@ function addExcitement (theWordArray) {
 
 }
 addExcitement(sentence)
+
+//modify last challenge so that only words with a counter variable divisible by 3 print 
+
+function addMoreExcitement (theWordArray) {
+
+    
+  let buildMeUp = ""
+
+  for(let i = 0; i < theWordArray.length; i++) {
+    if(i % 3 === 0){
+      buildMeUp += `${theWordArray[i]} `
+      console.log(buildMeUp)
+    }
+  }
+}
+addMoreExcitement(sentence)
