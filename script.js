@@ -76,7 +76,7 @@ console.log(cookedFood)
 //Overly excited practice challenge-- create an array of words, then create a function addExcitement that console logs rows of words until it reaches the end of the array
 
 
-let sentence = ["Only", "ten", "minutes", "left", "in", "class", "today", "...", "but", "I", "kinda", "like", "it", "here"];
+let sentence = ["The", "only", "thing", "we", "have", "to", "fear", "is", "fear", "itself"];
 
 
 
@@ -93,17 +93,24 @@ function addExcitement (theWordArray) {
 }
 addExcitement(sentence)
 
-//modify last challenge so that only words with a counter variable divisible by 3 print 
+// modify last challenge as follows:  
+//     If the current value of `i` divided by 3 has no
+//     remainder, add an exclamation point to the end of
+//     the word and then concatenate it to `buildMeUp`.
+//     Otherwise, just concatenate the word itself. 
 
 function addMoreExcitement (theWordArray) {
 
     
-  let buildMeUp = ""
+  let buildMeUp2 = ""
 
   for(let i = 0; i < theWordArray.length; i++) {
-    if(i % 3 === 0){
-      buildMeUp += `${theWordArray[i]} `
-      console.log(buildMeUp)
+    if (i % 3 === 0){
+      buildMeUp2 += (`${theWordArray[i]}! `);
+      console.log(buildMeUp2)
+    } else {
+      buildMeUp2 += `${theWordArray[i]} `;
+      console.log(buildMeUp2)
     }
   }
 }
