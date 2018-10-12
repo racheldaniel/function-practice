@@ -115,3 +115,23 @@ function addMoreExcitement (theWordArray) {
   }
 }
 addMoreExcitement(sentence)
+
+// modify last challenge as follows:  
+//     add a new argument to the function so that a developer can specify which character should be displayed instead of it always being an exclamation point. 
+
+function addMoreExcitement2 (theWordArray, character) {
+
+    
+  let buildMeUp3 = ""
+
+  for(let i = 0; i < theWordArray.length; i++) {
+    if (i % 3 === 0){
+      buildMeUp3 += (`${theWordArray[i]}${character} `);
+      console.log(buildMeUp3)
+    } else {
+      buildMeUp3 += `${theWordArray[i]} `;
+      console.log(buildMeUp3)
+    }
+  }
+}
+addMoreExcitement2(sentence, ":D")
